@@ -21,11 +21,13 @@ export const AppointmentsPage = ({appointments, addAppointments, contacts}) => {
   return (
     <div>
       <section>
-        <h2>Add Appointment</h2>
+        <h2> AppointmentForm</h2>
+        <AppointmentForm title={title} setTitle={setTitle} contacts = {contacts} contact={contact} setContact={setContact} date={date} setDate={setDate} time={time} setTime={setTime} handleSubmit={handleSubmit} />
       </section>
       <hr />
       <section>
         <h2>Appointments</h2>
+        <TileList list={appointments} />
       </section>
     </div>
   );

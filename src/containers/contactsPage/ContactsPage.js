@@ -54,10 +54,12 @@ export const ContactsPage = (props) => {
     <div>
       <section>
         { Problem }
+        <h2>Add Contact</h2> 
         <ContactForm name={name} setName={setName} email={email} setEmail={setEmail} phone={phone} setPhone={setPhone} handleSubmit={handleSubmit} />
       </section>
       <hr />
       <section>
+      <h2>Contacts</h2>
         <TileList list = {props.contacts} />
       </section>
     </div>
